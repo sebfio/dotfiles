@@ -3,7 +3,6 @@ syntax on
 set textwidth=80
 set smarttab
 colorscheme desert
-:imap ;; <Esc>
 :imap jj <Esc>
 
 command! MakeTags !ctags -R .
