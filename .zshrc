@@ -91,3 +91,7 @@ alias sebastian_usb="/media/sxf/"
 # Exports
 
 export SODIUM_PATH=$HOME/Documents/work/avr32libsodium
+
+
+eval "$(thefuck --alias)"
+

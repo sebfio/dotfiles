@@ -8,6 +8,7 @@ imap jj <Esc>
 
 set formatoptions+=w
 set tw=80
+set colorcolumn=80
 
 set enc=utf-8
 set fenc=utf-8
