@@ -34,3 +34,4 @@ export PATH=$PATH:$GOPATH/bin
 
 #sudo mount -t ntfs /dev/nvme0n1p3 /mnt/windows -o "umask=022"
 
+

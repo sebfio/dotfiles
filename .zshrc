@@ -95,3 +95,11 @@ export SODIUM_PATH=$HOME/Documents/work/avr32libsodium
 
 eval "$(thefuck --alias)"
 
+
+n() {
+    vim ~/notes/"$*".txt
+}
+
+nls() {
+    ls -c ~/notes/ | grep "$*"
+}
