@@ -54,15 +54,15 @@ map <S-F7> :make clean all<CR>
 " goto definition with F12
 map <F12> <C-]>
 " in diff mode we use the spell check keys for merging
-if &diff
-map <M-Down> ]c
-map <M-Up> [c
-map <M-Left> do
-map <M-Right> dp
-map <F9> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
-else
-" spell settings
-map <M-Down> ]s
-map <M-Up> [s
-endif
+"if &diff
+"map <M-Down> ]c
+"map <M-Up> [c
+"map <M-Left> do
+"map <M-Right> dp
+"map <F9> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
+"else
+"" spell settings
+"map <M-Down> ]s
+"map <M-Up> [s
+"endif
 
