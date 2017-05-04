@@ -35,3 +35,12 @@ export PATH=$PATH:$GOPATH/bin
 #sudo mount -t ntfs /dev/nvme0n1p3 /mnt/windows -o "umask=022"
 
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+source /home/sxf/.rvm/scripts/rvm
+export PATH=/path/to/usr/bin:"${PATH}"
+
+export PATH="$HOME/.cargo/bin:$PATH"

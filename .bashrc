@@ -131,3 +131,5 @@ fi
 
 exec zsh
 synclient PalmDetect=6~
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

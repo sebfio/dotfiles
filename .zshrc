@@ -7,7 +7,8 @@ export ZSH=/home/sxf/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="wezm"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -90,7 +91,13 @@ alias sebastian_usb="/media/sxf/"
 
 # Exports
 
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:/home/sxf/bin/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin
 export SODIUM_PATH=$HOME/Documents/work/avr32libsodium
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+alias pbcopy='xclip -selection c'
+alias pbpaste='xclip -selection clipboard -o'
 
 
 eval "$(thefuck --alias)"
@@ -103,3 +110,17 @@ n() {
 nls() {
     ls -c ~/notes/ | grep "$*"
 }
+
+
+diary() {
+    vim ~/.diary/"$*_$(date +%F)".txt
+}
+
+diaryls() {
+    ls -c ~/.diary/ | grep "$*"
+}
+
+source ~/.profile
+
+
+alias weather="curl wttr.in/toronto"
