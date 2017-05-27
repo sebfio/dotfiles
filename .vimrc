@@ -39,5 +39,19 @@ set showmatch
 " intelligent comments
 set comments=sl:/,mb:\ ,elx:\ */
 
+" Made by vimrc.io
+set autoindent  " take indent for new line from previous line
+set cindent  " do C program indenting
+set copyindent  " make 'autoindent' use existing indent structure
+set preserveindent  " preserve the indent structure when reindenting
+set shiftwidth=4  " number of spaces to use for (auto)indent step
+set smartindent  " smart autoindenting for C programs
+set smarttab  " use 'shiftwidth' when inserting <Tab>
+set tabstop=4  " number of spaces that <Tab> in file uses
+set showcmd  " show (partial) command in status line
+set number  " print the line number in front ddof each line
+set autoread  " autom. read file when changed outside of Vim
+set mouse=a  " enable the use of mouse clicks
+
 set tags+=~/.vim/tags/cpp
 
