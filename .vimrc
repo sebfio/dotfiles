@@ -3,11 +3,13 @@ syntax on
 set number
 set smarttab
 set background=dark
-"set termguicolors
-colorscheme breezy
-"colorscheme desert
+colorscheme torte 
+set mouse=a
 imap jj <Esc>
-
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 nnoremap <C-Down> :m .+1<CR>==
 nnoremap <C-Up> :m .-2<CR>==
 
@@ -39,5 +41,5 @@ set showmatch
 " intelligent comments
 set comments=sl:/,mb:\ ,elx:\ */
 
-set tags+=~/.vim/tags/cpp
+"#set tags+=~/.vim/tags/cpp
 
