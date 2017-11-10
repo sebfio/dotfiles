@@ -1,16 +1,10 @@
 # Setup script when going around to new computers
 
 # Best tools 
-sudo apt-get install git tmux vim zsh clipit
+sudo apt-get install git tmux vim zsh clipit ctags screen
 
-# the tool itself has a NSFW name, pass it in as an option to install
-if [ "$1" == fuck]; then
-    sudo apt update
-    sudo apt install python3-dev python3-pip
-    sudo -H pip3 install thefuck
-
-    echo 'eval "$(thefuck --alias)"' >> .zshrc
-fi
+sudo apt update
+sudo apt install python3-dev python3-pip
 
 # Best shell
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -27,4 +21,4 @@ mv dotfiles/.* $HOME
 git clone https://github.com/powerline/fonts
 echo "Set system fonts in settings, they've now been downloaded"
 
-
+# TODO: Add clip it aliases to zshrc
