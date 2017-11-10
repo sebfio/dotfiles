@@ -3,7 +3,7 @@ syntax on
 set number
 set smarttab
 set background=dark
-colorscheme torte 
+colorscheme slate 
 set mouse=a
 imap jj <Esc>
 set expandtab
