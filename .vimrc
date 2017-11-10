@@ -43,3 +43,5 @@ set comments=sl:/,mb:\ ,elx:\ */
 
 "#set tags+=~/.vim/tags/cpp
 
+" Display info at bottom
+set laststatus=2
