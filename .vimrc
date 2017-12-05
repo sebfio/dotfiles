@@ -45,3 +45,4 @@ set comments=sl:/,mb:\ ,elx:\ */
 
 " Display info at bottom
 set laststatus=2
+hi StatusLine ctermbg=3 ctermfg=8
